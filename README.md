@@ -1,2 +1,1 @@
 # DipluAnimes
-A anime blog
