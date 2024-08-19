@@ -1,0 +1,2 @@
+# DipluAnimes
+A anime blog
