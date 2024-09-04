@@ -1,0 +1,93 @@
+header{
+    color: var(--second-color);
+    max-width: 99.8%;
+    gap: 2px;
+}
+
+header a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+header > *{
+    background-color: var(--main-color);
+    max-width: 99%;
+}
+
+.h-bar{
+    --direction: row;
+    flex-direction: var(--direction);
+}
+
+.h-logo-container{
+    margin: 10px;
+    gap: 5px;
+}
+
+.h-logo{
+    background-color: transparent;
+    color: var(--second-color);
+}
+
+.h-button-div{
+    margin: 10px;
+    gap: 10px;
+}
+
+.h-button-container{
+    --time: 0.3s;
+    --bc: var(--main-color);
+    --c: var(--second-color);
+
+    border: 2.2px var(--second-color) solid;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: var(--bc);
+    color: var(--c);
+    gap: 5px;
+}
+
+.h-button-container:hover{
+    --bc: var(--second-color);
+    --c: var(--main-color);
+
+    transition: var(--time);
+    transform: scale(110%);
+}
+
+.h-button-container:hover *{
+    transition: var(--time);
+}
+
+.h-button{
+    --size: 25px;
+
+    width: var(--size);
+    height: var(--size);
+
+    background-color: var(--bc);
+    color: var(--c);
+}
+
+.h-button--large{
+    --size: 40px;
+}
+
+.h-nav{
+    margin-top: 1px;
+    width: 100%;
+    gap: 10px;
+    padding: 3px;
+}
+
+.h-nav-children{
+    padding: 5px;
+    background-color: transparent;
+    color: var(--second-color);
+}
+
+@media (max-width: 480px){
+    .h-bar{
+        --direction: column;
+    }
+}
